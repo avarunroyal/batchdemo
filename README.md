@@ -8,6 +8,7 @@ https://hub.docker.com/_/mysql
 # RUN kafka as docker container
 https://www.baeldung.com/ops/kafka-docker-setup
 create a folder name kafka and add the docker-compose.yml and then open GIT BASH - execute below command
+<br />$ cd kafka
 <br />$ docker-compose up -d
 
 # Create docker image of batchdemo microservice and push to docker repository
