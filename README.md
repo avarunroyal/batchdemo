@@ -15,12 +15,12 @@ create a folder name kafka and add the docker-compose.yml and then open GIT BASH
 $ mvn clean install
 <br />$ docker push devopsvarun/batchdemo:0.0.1-SNAPSHOT
 
-# RUN batchdemo microservice as docker container - singlenode
-$ docker run --network=kafka_default -p 8080:8080 -e "SPRING_PROFILES_ACTIVE=dev" -e MYSQL_HOSTNAME=mysql -e KAFKA_BOOTSTRAP_SERVERS=kafka:9092 --link=kafka --name=batchdemo devopsvarun/batchdemo:0.0.1-SNAPSHOT
-
 # EXECUTE dbscript - INSERT query
 open sqldeveloper - new connection - mysql db - localhost:3306 - user: root/varun as we used while creation - login
 open dbscript file, execute script.
+
+# RUN batchdemo microservice as docker container - singlenode
+$ docker run --network=kafka_default -p 8080:8080 -e "SPRING_PROFILES_ACTIVE=dev" -e MYSQL_HOSTNAME=mysql -e KAFKA_BOOTSTRAP_SERVERS=kafka:9092 --link=kafka --name=batchdemo devopsvarun/batchdemo:0.0.1-SNAPSHOT
 
 
 
