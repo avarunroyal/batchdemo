@@ -1,0 +1,17 @@
+use refreshtokens;
+
+create table tokens(
+   id INT NOT NULL,
+   token_value VARCHAR(100) NOT NULL,
+   status VARCHAR(100) NOT NULL,
+   PRIMARY KEY (id)
+);
+
+INSERT INTO 
+	tokens(id, token_value, status)
+VALUES
+	('1','ABC',''),
+	('2','XYZ',''),
+	('3','DEF','');
+    
+select * from tokens;
