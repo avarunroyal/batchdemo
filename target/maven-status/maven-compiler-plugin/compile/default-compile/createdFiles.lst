@@ -1,0 +1,7 @@
+com\example\batchdemo\entity\Tokens.class
+com\example\batchdemo\events\Consumer.class
+com\example\batchdemo\events\Producer.class
+com\example\batchdemo\JobRunner.class
+com\example\batchdemo\config\BatchConfiguration.class
+com\example\batchdemo\processor\TokensProcessor.class
+com\example\batchdemo\BatchdemoApplication.class
